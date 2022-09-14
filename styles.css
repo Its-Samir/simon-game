@@ -1,0 +1,110 @@
+body {
+  text-align: center;
+  background-color: #8900d2;
+}
+
+span {
+  color: #fff;
+  cursor: pointer;
+}
+
+.crossIcon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.instructionDiv {
+  position: absolute;
+  transform: translate(-600px);
+  padding: 20px;
+  height: 100vh;
+  width: 20vw;
+  background-color: #fff;
+  color: #000;
+  transition: .5s;
+}
+
+.instructionDivVisible {
+  transform: translate(0);
+}
+
+#level-title {
+  font-family: 'Merriweather', serif;
+  font-size: 3rem;
+  margin:  2%;
+  color: #FEF2BF;
+}
+
+.container {
+  width: 100%;
+  margin: 20px auto;
+  user-select: none;
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.playBtn {
+  font-family: 'Merriweather', serif;
+  padding: 20px 10px;
+  width: 9rem;
+  border-radius: 20px;
+  background-color: rgb(0, 221, 122);
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: large;
+}
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+@media (max-width: 768px) {
+
+  .instructionDiv {
+    width: 50vw;
+    padding: 40px;
+    height: auto;
+  }
+  .btn {
+    height: 100px;
+    width: 100px;
+  }
+
+  #level-title {
+    font-size: 1.5rem;
+  }
+
+  .playBtn {
+    padding: 10px 5px;
+    width: 7rem;
+  }
+}
